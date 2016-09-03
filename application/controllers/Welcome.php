@@ -20,6 +20,14 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data = [
+			'website'	=> '微节点',
+			'page_title'		=> '首页',
+		];
+
+		$this->load->view('templates/head', $data);
+		$this->load->view('templates/header');
+		$this->load->view('templates/footer');
+		$this->load->view('templates/foot');
 	}
 }

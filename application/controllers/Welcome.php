@@ -65,9 +65,47 @@ class Welcome extends CI_Controller {
             ]
         ];
 
+
 		$this->load->view('templates/head', $head);
 		$this->load->view('templates/header', $header);
         $this->load->view('templates/banner', $banner);
+
+        $standard = [
+            'background_color'  => '#526678',
+            'content'   => '<img src="/resource/img/upload/zp01.jpg" alt="">'
+        ];
+        $this->load->view('templates/standard', $standard);
+        $standard = [
+            'background_color'  => '#526678',
+            'content'   => '<img src="/resource/img/upload/zp02.jpg" alt="">'
+        ];
+        $this->load->view('templates/standard', $standard);
+        $standard = [
+            'background_color'  => '#526678',
+            'content'   => '<img src="/resource/img/upload/zp03.jpg" alt="">'
+        ];
+        $this->load->view('templates/standard', $standard);
+        $standard = [
+            'background_color'  => '#526678',
+            'content'   => '<img src="/resource/img/upload/zp04.jpg" alt="">'
+        ];
+        $this->load->view('templates/standard', $standard);
+        $standard = [
+            'background_color'  => '#526678',
+            'content'   => '<img src="/resource/img/upload/bbb.jpg" alt="">'
+        ];
+        $this->load->view('templates/standard', $standard);
+        $standard = [
+            'background_color'  => '#526678',
+            'content'   => '<img src="/resource/img/upload/zp06.jpg" alt="">'
+        ];
+        $this->load->view('templates/standard', $standard);
+        $standard = [
+            'background_color'  => '#526678',
+            'content'   => '<img src="/resource/img/upload/zp07.jpg" alt="">'
+        ];
+        $this->load->view('templates/standard', $standard);
+
 		$this->load->view('templates/footer');
 		$this->load->view('templates/foot');
 	}

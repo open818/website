@@ -6,13 +6,14 @@
 	</div>
 	<div class="nav-right" style="float: right;">
 		<ul class="nav">
-			<?php foreach ($menu as $item){ ?>
+			<?php $i = 0; foreach ($menus as $item){ ?>
 			<li>
-				<a href="<?php echo $item['url'] ?>">
+				<a class="a<?php echo $i; ?>" href="<?php echo $item['url'] ?>" style="color: <?php echo $item['font_color']; ?>;">
 					<?php echo $item['name'] ?>
 				</a>
+				<style>header .nav > li:hover > a.a<?php echo $i; ?> { background-color: <?php echo $item['hover_background_color']; ?>;  }</style>
 			</li>
-			<?php } ?>
+			<?php $i++; } ?>
 		</ul>
 	</div>
 </header>
